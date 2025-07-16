@@ -1,0 +1,132 @@
+/* Card container */
+.enroll-card {
+  max-width: 420px;
+  margin: 32px auto;
+  padding: 28px 24px 24px 24px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10), 0 1.5px 4px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.enroll-title {
+  text-align: center;
+  margin-bottom: 18px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.enroll-status-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+  gap: 10px;
+}
+
+.enroll-status-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #bbb;
+  transition: background 0.3s;
+  box-shadow: 0 0 6px rgba(0,0,0,0.10);
+}
+.enroll-status-dot.recording {
+  background: #e53e3e;
+  box-shadow: 0 0 8px #e53e3e55;
+}
+.enroll-status-dot.idle {
+  background: #a0aec0;
+}
+.enroll-status-text {
+  font-size: 1rem;
+  color: #4a5568;
+}
+
+.enroll-step {
+  text-align: center;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+  color: #2d3748;
+}
+
+.enroll-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+
+.enroll-btn {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.enroll-btn.start {
+  background: #3182ce;
+  color: #fff;
+}
+.enroll-btn.start:disabled {
+  background: #b3c6e7;
+  color: #f7fafc;
+  cursor: not-allowed;
+}
+.enroll-btn.start:hover:not(:disabled) {
+  background: #2563eb;
+}
+.enroll-btn.stop {
+  background: #e53e3e;
+  color: #fff;
+}
+.enroll-btn.stop:disabled {
+  background: #fbb6b6;
+  color: #f7fafc;
+  cursor: not-allowed;
+}
+.enroll-btn.stop:hover:not(:disabled) {
+  background: #c53030;
+}
+.enroll-btn.upload {
+  background: #38a169;
+  color: #fff;
+}
+.enroll-btn.upload:disabled {
+  background: #a0e7c3;
+  color: #f7fafc;
+  cursor: not-allowed;
+}
+.enroll-btn.upload:hover:not(:disabled) {
+  background: #258a4c;
+}
+
+.enroll-audio-preview {
+  margin-top: 10px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .enroll-card {
+    max-width: 98vw;
+    padding: 12px 4vw 16px 4vw;
+  }
+  .enroll-title {
+    font-size: 1.1rem;
+  }
+  .enroll-btn {
+    font-size: 0.95rem;
+    padding: 8px 10px;
+  }
+} 
