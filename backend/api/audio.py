@@ -19,7 +19,7 @@ whisper_model = whisper.load_model('small')
 
 # Load pyannote speaker embedding model
 # HF_TOKEN = os.getenv("HF_TOKEN")  # Or paste your token directly for testing
-HF_TOKEN = "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"
+HF_TOKEN = "Your Token Here"
 
 
 embedding_model = Model.from_pretrained("pyannote/embedding", use_auth_token=HF_TOKEN)
